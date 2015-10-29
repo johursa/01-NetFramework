@@ -1,6 +1,6 @@
 ﻿using System;
 
-[assembly:CLSCompliant(true)]
+[assembly: CLSCompliant(true)]
 namespace ProvideTime
 {
     public class TimeProvider
@@ -10,7 +10,7 @@ namespace ProvideTime
             return DateTime.Now.ToShortTimeString();
         }
 
-        public static string GetDatetime()
+        private static string GetDatetime()
         {
             return DateTime.UtcNow.ToLongDateString();
         }
